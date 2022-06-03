@@ -6,7 +6,7 @@ var port = process.env.PORT || 8080;
 // Grab the blacklist from the command-line so that we can update the blacklist without deploying
 // again. CORS Anywhere is open by design, and this blacklist is not used, except for countering
 // immediate abuse (e.g. denial of service). If you want to block all origins except for some,
-// use originWhitelist instead.
+// usae originWhitelist instead.
 var originBlacklist = parseEnvList(process.env.CORSANYWHERE_BLACKLIST);
 var originWhitelist =['http://localhost:8000','http://localhost:8100','capacitor//localhost','http://localhost','https://localhost'];
 function parseEnvList(env) {
